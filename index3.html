@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="images/logo grafena.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Grafena 2025</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top py-3 ps-5 pe-5">
+        <div class="container">
+            <a href="#" class="navbar-brand"><b><i>GRAFENA 2025</i></b></a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#kami" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kelompok" class="nav-link">Kelompok Grafena</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clue" class="nav-link">Clue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="materiweek.html" class="nav-link">Materi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <section id="kami" class="imageHeader text-center text-md-start py-5 mt-5 bg-secondary-subtle">
+        <div class="container">
+            <div class="d-block d-md-flex align-items-center">
+                <div class="w-50 mx-auto text-dark">
+                    <h1>Berani <span class="biru">Melangkah</span> Ukir <span class="biru">Perubahan!</span></h1>
+                    <p class="deskripsi">Grafena merupakan singkatan dari Grow and Forth into An Innovative Chemical Industrialist and Able to Compete in the World. Kegiatan ini merupakan masa bimbingan prodi Teknologi Industri Kimia yang bertujuan untuk memperkenalkan mahasiswa baru dengan lingkungan akademis, budaya, dan fasilitas yang ada di kampus</p>
+                    
+                    <!-- <div class="button">
+                        <button class="btn btn-warning me-2">
+                            Daftar
+                        </button>
+
+                        <button class="btn btn-warning">
+                            Login
+                        </button>
+                    </div> -->
+                </div>
+                
+                <img 
+                class="img-fluid w-25 "
+                src="images/logo grafena.png" alt="traveling">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+
+    <section id="kelompok" class="my-5">
+        <div class="container">
+            <h2 class="text-center mb-4 pb-4 fw-bold">KELOMPOK GRAFENA</h2>
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-selena" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Selena</h5>
+                            <p class="card-text">Mentor misterius dan pelindung penuh rahasia.</p>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Selena')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-nebula" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Nebula</h5>
+                            <p class="card-text">Dunia yang penuh cahaya dan teknologi tinggi.</p>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Nebula')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-batozar" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Batozar</h5>
+                            <p class="card-text">Tahanan legendaris dengan kekuatan dahsyat.</p>
+                            <button class="btn"data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Batozar')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-ceros" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Ceros</h5>
+                            <p class="card-text">Dunia militer yang keras dan penuh kedisiplinan.</p>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Ceros')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-sagaras" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sagaras</h5>
+                            <p class="card-text">Dunia air yang damai dan penuh rahasia.</p>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Sagaras')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card card-bg card-bg-komet" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Komet</h5>
+                            <p class="card-text">Simbol perjalanan waktu dan perubahan besar.</p>
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#anggotaModal"
+                             onclick="showAnggota('Komet')">
+                            <span class="text-light px-1">Anggota</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Komen -->
+    <section class="navbar text-light p-3">
+        <div class="container">
+            <div class="mx-auto">  
+                <h4><b><i>SEMANGAT GRANGERS!!!</i></b></h4>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Clue -->
+    <section id="clue" class="my-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/week2.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK 2</p>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex gap-2">
+                            <button class="btn btn-sm cek-detail-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detailModal"
+                                    data-img-src="images/week2.png">
+                                    <span class="text-light">Cek Detail</span>
+                            </button>
+                            <button class="btn btn-sm"><a href=""><span class="text-light">Submit</span></a></button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/week3.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK 3</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm"><span class="text-lightcek-detail-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detailModal"
+                                    data-img-src="images/week3.png">
+                                    <span class="text-light">Cek Detail</span>
+                            </button>
+                            <button class="btn btn-sm"><a href=""><span class="text-light">Submit</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/tandatanya.jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK 4</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm"><span class="text-lightcek-detail-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detailModal"
+                                    data-img-src="images/week2.png">
+                                    <span class="text-light">Cek Detail</span>
+                            </button>
+                            <button class="btn btn-sm"><a href=""><span class="text-light">Submit</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/tandatanya.jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK 5</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm"><span class="text-lightcek-detail-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detailModal"
+                                    data-img-src="images/week2.png">
+                                    <span class="text-light">Cek Detail</span>
+                            </button>
+                            <button class="btn btn-sm"><a href=""><span class="text-light">Submit</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/tandatanya.jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK 6</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm"><span class="text-lightcek-detail-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detailModal"
+                                    data-img-src="images/week2.png">
+                                    <span class="text-light">Cek Detail</span>
+                            </button>
+                            <button class="btn btn-sm"><a href=""><span class="text-light">Submit</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card w-100 h-80">
+                    <img src="images/tandatanya.jpeg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">WEEK ???</p>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-lg"><span class="text-light">???</span></button>
+                            <button class="btn btn-lg"><a href=""><span class="text-light">???</span></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <!-- Copyright -->
+    <footer class="text-light p-4 text-center position-relative bg-footer">
+  <div class="container d-flex flex-column align-items-center justify-content-center">
+    <!-- Teks -->
+    <p class="lead mb-3">Check Our Social Media!</p>
+
+    <!-- Ikon sosial media -->
+    <div class="d-flex justify-content-center fs-2 gap-4">
+      <a class="text-white" href="https://www.instagram.com/grafena.himatologika/">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a class="text-white" href="#!">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Tombol ke atas -->
+  <a href="#" class="position-absolute end-0 bottom-0 pb-4 pe-3 text-white">
+    <i class="bi bi-arrow-up-circle h1"></i>
+  </a>
+</footer>
+
+
+
+    <!-- Modal card kelompok-->
+        <div class="modal fade" id="anggotaModal" tabindex="-1" aria-labelledby="anggotaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="anggotaModalLabel">Anggota Kelompok</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Konten anggota akan dimasukkan lewat JS -->
+            </div>
+            </div>
+        </div>
+        </div>
+    <!-- Modal card clue-->
+        <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailModalLabel">CLUE</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="Detail Gambar" class="img-fluid rounded">
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="model.js"></script>
+    
+</body>
+</html>
